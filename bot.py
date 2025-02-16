@@ -2,7 +2,7 @@ import sqlite3
 import json
 import requests
 import openai
-import base58
+#import base58
 import re
 import time
 import asyncio
