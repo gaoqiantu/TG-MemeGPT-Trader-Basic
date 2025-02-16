@@ -1,7 +1,7 @@
 telethon>=1.28.0
 openai>=1.0.0
 requests>=2.31.0
-sqlite3>=3.0.0  # Usually included in Python standard library
+# Usually sqlite3 included in Python standard library
 # Optional for Solana
 # solana>=0.29.0
 # solders>=0.16.0
