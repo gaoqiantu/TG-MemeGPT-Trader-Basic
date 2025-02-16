@@ -11,7 +11,7 @@ TG-MemeGPT-Trader-Basic is a Solana-based meme token auto-trading bot leveraging
 ## ✨ 亮点功能 / Key Features
 
 - **自动监控 Telegram 社群**: 监听社群中的 Meme 币推广信息（默认监控 t.me/MomentumTrackerCN）。
-- **多层过滤系统**: 仅关注推广社群数量≥5或短时间内传播迅速的代币。
+- **多层过滤系统**: 仅关注推广社群数量≥3或短时间内传播迅速的代币。
 - **智能代币分析**: 结合 `@solana_alerts_dogeebot` 和 `@dogeebot_bot` 提取代币信息。
 - **AI 评分机制**: 通过 OpenAI GPT API 分析并评分，评分标准包括：
   - 市值低的代币评分更高
