@@ -42,7 +42,10 @@ TG-MemeGPT-Trader-Basic is a Solana-based meme token auto-trading bot leveraging
    ```sh
    python3 bot.py
    ```
+   输入tg手机号： +（区号）号码，比如美国手机987-654-3210，则输入+19876543210
+   接收验证码后，输入验证码。之后就可以通过session登录不用再次输入。 
 
+**建议放在服务器运行时，将bot添加到systemd 通过systemctl自动启动和重启。**
 ---
 
 ## 🔗 相关资源 / Useful Links
