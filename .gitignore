@@ -1,3 +1,13 @@
+config.json
+__pycache__/
+*.db
+# Ignore SQLite database file
+trades.db
+
+# Ignore Telegram session file
+session.session
+session.session-journal  # SQLite journal file
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
