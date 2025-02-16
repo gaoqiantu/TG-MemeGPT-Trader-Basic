@@ -35,12 +35,12 @@ TG-MemeGPT-Trader-Basic is a Solana-based meme token auto-trading bot leveraging
 
 2. **安装依赖**（确保 Python 版本 ≥3.8）
    ```sh
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 3. **运行脚本**
    ```sh
-   python tg_memegpt_trader.py
+   python3 bot.py
    ```
 
 ---
