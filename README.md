@@ -11,7 +11,7 @@ TG-MemeGPT-Trader-Basic is a Solana-based meme token auto-trading bot leveraging
 ## ✨ 亮点功能 / Key Features
 
 - **自动监控 Telegram 社群**: 监听社群中的 Meme 币推广信息（默认监控 t.me/MomentumTrackerCN）。
-- **多层过滤系统**: 仅关注推广社群数量≥3或短时间内传播迅速的代币。
+- **多层过滤系统**: 仅关注推广社群数量≥3（可修改）或短时间内传播迅速的代币。
 - **智能代币分析**: 结合 `@solana_alerts_dogeebot` 和 `@dogeebot_bot` 提取代币信息。
 - **AI 评分机制**: 通过 OpenAI GPT API 分析并评分，评分标准包括：
   - 市值低的代币评分更高
@@ -28,10 +28,28 @@ TG-MemeGPT-Trader-Basic is a Solana-based meme token auto-trading bot leveraging
 ## 🛠️ 运行前准备 / Setup Before Running
 
 1. **配置 `config.json`**：
-    - `telegram.api_id` / `api_hash` / `channel_id` （用于监控指定 Telegram 频道, 目前的监控群是"channel_id": -1002327294921）
+    - `telegram.api_id` / `api_hash` / `channel_id` （用于登录Telegram，并监控指定频道, 目前的监控群是 Momentum Tracker CN "channel_id": -1002327294921）
     - `openai.api_key` （用于 AI 分析）
-    - `discord.webhook_url` （用于推送交易分析结果至 Discord 群组）
+    - `discord.webhook_url` （用于推送交易分析结果至 Discord 群组, 兔子的唯一社群-狡兔三窟:https://discord.gg/zqQZ4qNXgh）
     - `solana.private_key` / `solana.rpc_url` （可选，Solana 钱包私钥，用于链上直接交易）
+{
+    "telegram": {
+      "api_id": "xxx",
+      "api_hash": "xxx",
+      "channel_id": -1002327294921
+    },
+    "openai": {
+      "api_key": "xxx",
+      "organization": "xxx"
+    },
+    "solana": {
+      "private_key": "xxx",
+      "rpc_url": "https://api.mainnet-beta.solana.com"
+    },
+    "discord": {
+      "webhook_url": "xxx"
+    }
+  }
 
 2. **安装依赖**（确保 Python 版本 ≥3.8）
    ```sh
